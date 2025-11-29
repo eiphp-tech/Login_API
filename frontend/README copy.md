@@ -49,33 +49,13 @@ hover:shadow-[0_0_30px_rgba(196,255,13,0.5)]
 ### Secondary Button (Outline)
 
 ```
-bg-transparent
-border-2
-border-gray-700
-text-white
-font-medium
-rounded-lg
-px-6
-py-3
-w-full
-hover:bg-gray-800
-hover:border-gray-600
-active:bg-gray-700
-transition-all
-duration-200
+bg-transparent border-2 border-gray-700 text-white font-medium rounded-lg px-6 py-3 w-full hover:bg-gray-800 hover:border-gray-600 active:bg-gray-700 transition-all duration-200
 ```
 
-### Text Button (Link Style)
+### Text Link (Link Style)
 
-```
-bg-transparent
-text-[#C4FF0D]
-font-medium
-hover:text-[#B8F000]
-underline-offset-4
-hover:underline
-transition-colors
-duration-200
+```bg-transparent text-[#C4FF0D] font-medium hover:text-[#B8F000] underline-offset-4 hover:underline transition-colors duration-200
+
 ```
 
 ### Button com Loading State
@@ -102,24 +82,8 @@ disabled:cursor-not-allowed
 
 ### Google Button
 
-```
-bg-transparent
-border
-border-gray-700
-text-white
-font-medium
-rounded-lg
-px-6
-py-3.5
-w-full
-flex
-items-center
-justify-center
-gap-3
-hover:bg-gray-800
-hover:border-gray-600
-transition-all
-duration-200
+```bg-transparent border border-gray-700 text-white font-medium rounded-lg px-6 py-3.5 w-full flex items-center justify-center gap-3 hover:bg-gray-800 hover:border-gray-600 transition-all duration-200
+
 ```
 
 **Icon Style:**
@@ -138,24 +102,8 @@ font-medium
 
 ### Microsoft Button
 
-```
-bg-transparent
-border
-border-gray-700
-text-white
-font-medium
-rounded-lg
-px-6
-py-3.5
-w-full
-flex
-items-center
-justify-center
-gap-3
-hover:bg-gray-800
-hover:border-gray-600
-transition-all
-duration-200
+```bg-transparent border border-gray-700 text-white font-medium rounded-lg px-6 py-3.5 w-full flex items-center justify-center gap-3 hover:bg-gray-800 hover:border-gray-600 transition-all duration-200
+
 ```
 
 ---
