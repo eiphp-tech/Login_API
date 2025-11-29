@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors Palette */
+
+  /* Text/Neutral */
+  --color-text-neutral: #ffffff;
+  --color-text-neutral-secondary: #a4abd2;
+  --color-text-neutral-tertiary: #6d7a83;
+  --color-text-neutral-placeholder: #52616b;
+  --color-text-neutral-white: #ffffff;
+  --color-text-neutral-inverse: #080b0c;
+
+  /* Text/Brand */
+  --color-text-brand-primary: #aef31f;
+  --color-text-brand-secondary: #bbf93d;
+
+  /* Background/Neutral */
+  --color-bg-neutral-primary: #080b0c;
+  --color-bg-neutral-secondary: #141b1f;
+  --color-bg-neutral-tertiary: #212a31;
+  --color-bg-neutral-quaternary: #303f49;
+  --color-bg-neutral-white: #ffffff;
+  --color-bg-neutral-overlay: #00000080;
+
+  /* Background/Brand */
+  --color-bg-brand-primary: #aef31f;
+  --color-bg-brand-secondary: #364c0a;
+  --color-bg-brand-tertiary: #0e1403;
+
+  /* Foreground/Neutral */
+  --color-fg-neutral-primary: #080b0c;
+  --color-fg-neutral-secondary: #212a31;
+  --color-fg-neutral-tertiary: #52616b;
+  --color-fg-neutral-quaternary: #88939b;
+  --color-fg-neutral-white: #ffffff;
+
+  /* Foreground/Brand */
+  --color-fg-brand-primary: #aef31f;
+  --color-fg-brand-secondary: #9ad81c;
+
+  /* Border/Neutral */
+  --color-border-neutral-primary: #212a31;
+  --color-border-neutral-secondary: #303f49;
+  --color-border-neutral-tertiary: #88939b;
+  --color-border-neutral-white: #ffffff;
+  --color-border-neutral-disabled: #080b0c;
+
+  /* border/Brand */
+  --color-border-brand-primary: #aef31f;
+  --color-border-brand-secondary: #72a015;
+}

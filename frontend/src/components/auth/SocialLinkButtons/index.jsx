@@ -1,19 +1,33 @@
-export const SocialLinkButtons = () => {
+export const SocialLinkButtons = ({ children, size = "md" }) => {
   const icons = {
     google: "/images/icons/Google.svg",
     microsoft: "/images/icons/Microsoft.svg",
   };
 
+  const iconSize = {
+    sm: "h-4 w-4",
+    md: "h-6 w-6",
+    lg: "h-8 w-8",
+  };
+
   return (
     <div className="flex flex-col gap-4 w-full">
       <button className="bg-transparent border border-gray-700 text-white font-medium rounded-lg px-6 py-3.5 w-full flex items-center justify-center gap-3 hover:border-gray-600 transition-all duration-200 cursor-pointer">
-        <img src={icons.google} alt="google icon" />
-        Sign up with Google
+        <img
+          src={icons.google}
+          alt="google icon"
+          className={`${iconSize[size]}`}
+        />
+        {children} Google
       </button>
 
       <button className="bg-transparent border border-gray-700 text-white font-medium rounded-lg px-6 py-3.5 w-full flex items-center justify-center gap-3 hover:border-gray-600 transition-all duration-200 cursor-pointer">
-        <img src={icons.microsoft} alt="microsoft icon" />
-        Sign up with Microsoft
+        <img
+          src={icons.microsoft}
+          alt="microsoft icon"
+          className={`${iconSize[size]}`}
+        />
+        {children} Microsoft
       </button>
     </div>
   );
