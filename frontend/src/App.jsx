@@ -1,29 +1,23 @@
-import { SocialLinkButtons } from "./components/auth/SocialLinkButtons";
-import { Button } from "./components/common/Button";
-import { TextLink } from "./components/common/TextLink";
-import { Input } from "./components/common/Input";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+// Pages
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import VerifyCode from "./pages/VerifyCode";
+import SetPassword from "./pages/SetPassword";
+import ResetPasswordRequest from "./pages/ResetPasswordRequest"; // Assumindo criação similar
 
 export const App = () => {
   return (
-    <>
-      <div className="bg-[var(--color-bg-neutral-primary)] h-full flex flex-col p-20 gap-5">
-        <TextLink size="md" variant="primary">
-          Texto 1
-        </TextLink>
-        <TextLink size="md" variant="secondary">
-          Texto 2
-        </TextLink>
-
-        <Button size="sm" variant="secondary" type="button">
-          Clique em mim
-        </Button>
-
-        <SocialLinkButtons size="md">Sign up with</SocialLinkButtons>
-        <div className="flex flex-1 gap-2">
-          <Input placeholder={"e.g., John"} label={"First name"} type="text" />
-          <Input placeholder={"e.g., John"} label={"Last name"} type="text" />
-        </div>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/SignIn" replace />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/verify-code" element={<VerifyCode />} />
+        <Route path="/set-password" element={<SetPassword />} />
+        <Route path="/reset-password" element={<ResetPasswordRequest />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
