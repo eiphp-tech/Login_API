@@ -1,7 +1,10 @@
+import googleIcon from "../../../assets/images/icons/Google.svg";
+import microsoftIcon from "../../../assets/images/icons/Microsoft.svg";
+
 export const SocialLinkButtons = ({ children, size = "md" }) => {
   const icons = {
-    google: "/images/icons/Google.svg",
-    microsoft: "/images/icons/Microsoft.svg",
+    google: googleIcon,
+    microsoft: microsoftIcon,
   };
 
   const iconSize = {

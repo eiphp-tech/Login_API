@@ -13,7 +13,7 @@ export const TextLink = ({
     primary:
       "bg-transparent text-[#C4FF0D] font-semibold  underline-offset-4 hover:underline transition-colors duration-400",
     secondary:
-      "bg-transparent text-[#FFFFFF] font-regular  underline-offset-4 hover:underline transition-colors duration-200",
+      "bg-transparent text-[#ffff] text-neutral-secondary font-regular  underline-offset-4 hover:underline transition-colors duration-200",
   };
 
   const sizes = {

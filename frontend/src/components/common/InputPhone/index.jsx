@@ -81,7 +81,7 @@ export const InputPhone = ({ placeholder }) => {
                   }}
                   className="w-full p-3 flex items-center hover:bg-gray-800 transition-colors text-left"
                 >
-                  <span className="text-xl">
+                  <span className="text-sm">
                     {country.code}{" "}
                     <span className="text-[var(--color-text-neutral-tertiary)] text-[10px]">
                       {country.country}

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background-color: #080b0c;
+}
+
 @theme {
   /* Colors Palette */
 
