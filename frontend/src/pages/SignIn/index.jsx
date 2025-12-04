@@ -79,16 +79,18 @@ export const SignIn = () => {
           </Link>
         </div>
 
-        <Button
-          variant="primary"
-          type="submit"
-          disabled={isLoading}
-          className="mt-4 p-4"
-        >
-          {isLoading ? "Loading..." : "Continue"}
-        </Button>
+        <Link to="/set-password">
+          <Button
+            variant="primary"
+            type="submit"
+            disabled={isLoading}
+            className="mt-4 p-4"
+          >
+            {isLoading ? "Loading..." : "Continue"}
+          </Button>
+        </Link>
       </form>
-      <p className="text-center text-gray-500 mt-8 text-sm">
+      <p className="text-center text-gray-500 mt-3 text-sm">
         Don't have an account?{" "}
         <Link to="/signup">
           <TextLink children="Sign up" variant="primary" />

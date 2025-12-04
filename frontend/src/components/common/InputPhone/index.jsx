@@ -100,6 +100,7 @@ export const InputPhone = ({ placeholder }) => {
           value={phoneNumber}
           onChange={handlePhoneChange}
           placeholder={placeholder}
+          required
           className="w-full text-[var(--color-text-neutral-white)] focus:outline-none text-sm placeholder:text-[var(--color-text-neutral-placeholder)]  transition-all duration-200"
         />
       </div>

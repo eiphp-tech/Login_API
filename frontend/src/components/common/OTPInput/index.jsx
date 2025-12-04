@@ -53,10 +53,11 @@ export const OTPInput = ({ length = 6, onComplete }) => {
           ref={(input) => (inputRefs.current[index] = input)}
           type="number"
           value={value}
+          required
           onChange={(e) => handleChange(index, e)}
           onClick={() => handleClick(index)}
           onKeyDown={(e) => handleKeyDown(index, e)}
-          className="w-full text-[var(--color-text-neutral-white)] focus:outline-none text-sm placeholder:text-[var(--color-text-neutral-placeholder)]  transition-all duration-200"
+          className="w-full text-[var(--color-text-neutral-white)] focus:outline-none placeholder:text-[var(--color-text-neutral-placeholder)]  transition-all duration-200"
         />
       ))}
     </div>
